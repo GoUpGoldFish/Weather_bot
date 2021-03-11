@@ -12,8 +12,7 @@ choice = ReplyKeyboardMarkup(resize_keyboard=True,
                                      )],
                                  [
                                      KeyboardButton(
-                                         text=emoji.emojize(":wrench:", use_aliases=True) +
-                                              ' меню'
+                                         text=emoji.emojize(":wrench:", use_aliases=True) + ' меню'
                                      )
                                  ]
                              ])
