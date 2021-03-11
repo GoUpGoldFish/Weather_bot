@@ -9,7 +9,7 @@ async def on_startup_notify(dp: Dispatcher):
     for admin in ADMINS:
         try:
             # await dp.bot.send_message(admin, "Бот Запущен")
-            await dp.bot.send_message(chat_id=admin, text='Бот запущен и готов к работе с кнопками')
+            await dp.bot.send_message(chat_id=admin, text='Бот запущен и готов к работе')
 
 
         except Exception as err:

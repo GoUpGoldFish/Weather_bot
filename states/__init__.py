@@ -1,1 +1,1 @@
-from .test import Anketa
+from .push_button import PushButtonCity
