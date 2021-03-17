@@ -3,7 +3,7 @@ from loader import dp
 from aiogram.dispatcher.filters import Command
 from aiogram import types
 from aiogram.utils.markdown import hbold
-from keyboards.default import choice
+from keyboards.default import send_geolocation
 from keyboards.inline import greeting_inline_menu, now_several_days_choice, number_of_days_choice
 import emoji
 from weather_api import geo, city, new_weather
@@ -20,10 +20,12 @@ async def start_greeting(message: types.Message):
                            'Просто выбери, что тебе нужно: ', reply_markup=greeting_inline_menu)
 
 
-@dp.message_handler(content_types=['text'])
-async def press_menu_button(message: types.Message):
-    if message.text == emoji.emojize(":wrench:", use_aliases=True) + ' меню':
-        await message.answer(text="Выбери, что тебе нужно:",reply_markup=greeting_inline_menu)
+@dp.callback_query_handler(text="go_to_main_menu")
+async def press_menu_button(call: CallbackQuery):
+    await call.message.answer(text='Привет ' + hbold(f'{call.message.chat.first_name}') + ', я погодный бот. \n\n'
+                         + 'Если тебе нужно узнать погоду - я тебе помогу\n\n'
+                           'Просто выбери, что тебе нужно: ', reply_markup=greeting_inline_menu)
+
 
 
 # @dp.message_handler(content_types=['location'])

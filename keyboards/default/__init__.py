@@ -1,1 +1,1 @@
-from .choice_button import choice
+from .send_geolocation import send_geolocation

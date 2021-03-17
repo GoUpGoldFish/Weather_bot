@@ -2,7 +2,7 @@ async def on_startup(dp):
     import filters
     import middlewares
     filters.setup(dp)
-    middlewares.setup(dp)
+    # middlewares.setup(dp)
 
     from utils.notify_admins import on_startup_notify
     await on_startup_notify(dp)
