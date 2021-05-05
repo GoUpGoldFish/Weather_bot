@@ -7,9 +7,14 @@ send_geolocation = ReplyKeyboardMarkup(resize_keyboard=True,
                                  [
                                      KeyboardButton(
                                          text=emoji.emojize(":globe_with_meridians:", use_aliases=True) + ' отправить'
-                                                                                                          ' геолоккацию',
+                                                                                                          ' геолокацию',
                                          request_location=True
                                      )
-                                 ]
+                                 ],
+                                 # [
+                                 #     KeyboardButton(
+                                 #         text=emoji.emojize(":house:", use_aliases=True) + " меню"
+                                 #     )
+                                 # ]
 
                              ])

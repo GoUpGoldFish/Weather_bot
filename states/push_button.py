@@ -2,6 +2,7 @@ from aiogram.dispatcher.filters.state import StatesGroup, State
 
 
 class PushButton(StatesGroup):
+
     after_push_city_button = State()
     get_geolocation_weather_now = State()
     get_geolocation_weather_for_1_day = State()

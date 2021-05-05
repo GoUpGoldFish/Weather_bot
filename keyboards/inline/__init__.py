@@ -3,3 +3,6 @@ from .now_several_days_choice import now_several_days_choice
 from .number_of_days_choice import number_of_days_choice
 from .comeback_menu_to_2_branchline import comeback_to_2_branchline
 from .comeback_menu_to_3_branchline import comeback_to_3_branchline
+from .back_from_city_to_main_menu import back_from_write_city_to_main_menu
+from .back_from_city_to_main_menu import to_main_menu_from_city
+from .main_menu_button import main_menu_button

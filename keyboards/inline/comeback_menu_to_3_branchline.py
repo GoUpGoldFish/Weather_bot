@@ -13,7 +13,7 @@ comeback_to_3_branchline = InlineKeyboardMarkup(row_width=2,
                                                     ],
                                                     [
                                                         InlineKeyboardButton(
-                                                            text=emoji.emojize(":wrench:", use_aliases=True) + ' меню',
+                                                            text=emoji.emojize(":house:", use_aliases=True) + ' меню',
                                                             callback_data="go_to_main_menu"
                                                         )
                                                     ]

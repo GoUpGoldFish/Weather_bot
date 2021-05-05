@@ -17,7 +17,7 @@ now_several_days_choice = InlineKeyboardMarkup(row_width=2,
                                                    [
                                                        InlineKeyboardButton(
                                                            text=emoji.emojize(":leftwards_arrow_with_hook:", use_aliases=True) + "назад",
-                                                           callback_data="go_to_main_menu"
+                                                           callback_data="from_2_branchline_to_main_menu"
                                                        )
                                                    ]
                                                ])
